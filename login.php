@@ -5,7 +5,7 @@ if (isset($_POST['login'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
     
-    // Ambil domain dari email
+
     $email_parts = explode('@', $email);
     $domain = count($email_parts) == 2 ? $email_parts[1] : '';
     
